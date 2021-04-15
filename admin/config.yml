@@ -21,7 +21,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "article"}
       - {label: "Collection", name: "collection", widget: "hidden", default: "articles"}
-      - {label: "Permalink", name: "permalink", widget: "hidden", default: {{slug}}}
+      - {label: "Permalink", name: "permalink", widget: "hidden", default: "none"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss", format: "YYYY-MM-DDTHH:mm:ss+00:00", picker_utc: true}
