@@ -14,7 +14,7 @@ collections:
     folder: "articles"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    preview_path: "posts/{{year}}/{{month}}/{{day}}/{{fields.title}}.html"
+    preview_path: "articles/{{slug}}.html"
     extension: "mokkf"
     format: "yaml-frontmatter"
     editor:
@@ -22,7 +22,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "article"}
       - {label: "Collection", name: "collection", widget: "hidden", default: "articles"}
-      - {label: "Permalink", name: "permalink", widget: "hidden", default: "date"}
+      - {label: "Permalink", name: "permalink", widget: "hidden", default: "{{slug}}"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss", format: "YYYY-MM-DDTHH:mm:ss+00:00", picker_utc: true}
