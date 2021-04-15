@@ -1,0 +1,19 @@
+---
+title: "Content Management"
+permalink: "/admin/index.html"
+markdown: false
+---
+
+<!doctype html>
+<html>
+{% capture head %}
+{% include head.html %}
+{% endcapture %}
+{% capture stylesheet %}
+<link rel="stylesheet" href="{{ global.url }}/assets/css/style.css" />
+{% endcapture %}
+{{ head | replace: stylesheet, '' }}
+<body>
+  <script src="https://unpkg.com/netlify-cms/dist/netlify-cms.js"></script>
+</body>
+</html>
