@@ -7,5 +7,5 @@ image: https://raw.githubusercontent.com/Dirout/Dirout.github.io/master/branding
 navitems:
   - name: Home
     url: /index.html
-  - name: Dirout
-    url: https://github.com/Dirout
+  - name: Contribute
+    url: /admin/index.html
