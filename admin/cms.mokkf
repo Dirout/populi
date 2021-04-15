@@ -9,10 +9,7 @@ markdown: false
 {% capture head %}
 {% include head.html %}
 {% endcapture %}
-{% capture stylesheet %}
-<link rel="stylesheet" href="{{ global.url }}/assets/css/style.css" />
-{% endcapture %}
-{{ head | replace: stylesheet, '' }}
+{{ head | replace: '<link rel="stylesheet" href="https://dirout.github.io/populi/assets/css/style.css" />', '' }}
 <body>
   <script src="https://unpkg.com/netlify-cms/dist/netlify-cms.js"></script>
 </body>
